@@ -1,0 +1,40 @@
+.clustering-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .clustering-chart {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 96%;
+  }
+  
+  .clustering-chart h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .plotly-graph {
+    width: 100%;
+    max-width: 700px;
+  }
+  
+  .chart-description {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 168px;
+    text-align: center;
+    line-height: 1.5;
+    max-width: 90%;
+    align-self: flex-start;
+  }
+  

@@ -1,0 +1,34 @@
+.trends-container,
+.impact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #f5f7fa;
+  margin-bottom: 40px;
+}
+
+.trend-card,
+.impact-card {
+  width: 45%;
+  min-width: 300px;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.trend-card h2,
+.impact-card h2 {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.plot-container {
+  width: 100%;
+  height: 300px;
+}

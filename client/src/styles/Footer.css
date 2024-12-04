@@ -1,0 +1,11 @@
+/* Footer.css */
+.footer {
+    background-color: rgb(126 34 206 / var(--tw-bg-opacity, 1));
+    color: white;
+    padding: 0px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  

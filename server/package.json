@@ -1,0 +1,28 @@
+{
+  "name": "stockproq",
+  "version": "1.0.0",
+  "description": "SmartDemand is a Web Application designed for small business owners, providing AI-driven demand forecasting and business analytics. It leverages historical data, external data sources, and clustering techniques to generate accurate demand forecasts, helping businesses optimize their inventory and marketing strategies.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:prod": "node src/index.js",
+    "start": "nodemon src/index.js",
+    "build": "echo \"Error: no build specified\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
