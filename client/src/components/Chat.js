@@ -3,7 +3,14 @@ import "../styles/Chat.css";
 
 const Chat = () => {
   const [messages, setMessages] = useState([
+<<<<<<< HEAD
     { sender: "bot", text: "Hello! How can I assist you today? Ask me about business trends, metrics, customer impact, or insights!" },
+=======
+    {
+      sender: "bot",
+      text: "Hello! How can I assist you today? Ask me about business trends, metrics, customer impact, or insights!",
+    },
+>>>>>>> cbef87c (updated flask server)
   ]);
   const [input, setInput] = useState("");
   const messagesEndRef = useRef(null);
@@ -29,6 +36,7 @@ const Chat = () => {
       ]);
 
       try {
+<<<<<<< HEAD
         const response = await fetch("http://127.0.0.1:5000/api/chat", {
           method: "POST",
           headers: {
@@ -36,6 +44,22 @@ const Chat = () => {
           },
           body: JSON.stringify({ prompt: input }),
         });
+=======
+        // Use the environment variable for the API endpoint
+        const response = await fetch(
+          `${process.env.REACT_APP_AUTH_API_ENDPOINT}/llm-response`,
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Authorization: `Bearer ${localStorage.getItem("token")}`,
+            },
+            body: JSON.stringify({ prompt: input }),
+          }
+        );
+        
+        
+>>>>>>> cbef87c (updated flask server)
 
         const data = await response.json();
         const botReply = data.reply || "Sorry, I couldn't process that.";
@@ -45,7 +69,14 @@ const Chat = () => {
         console.error("Error connecting to the server:", error);
         setMessages((prevMessages) => [
           ...prevMessages,
+<<<<<<< HEAD
           { sender: "bot", text: "Error: Unable to reach the server. Please try again later." },
+=======
+          {
+            sender: "bot",
+            text: "Error: Unable to reach the server. Please try again later.",
+          },
+>>>>>>> cbef87c (updated flask server)
         ]);
       }
     }

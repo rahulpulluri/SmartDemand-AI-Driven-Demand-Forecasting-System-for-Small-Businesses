@@ -27,6 +27,10 @@ export const generateToken = (user) => {
       org_id: user.org_id,
     },
     SECRET_KEY,
+<<<<<<< HEAD
     { expiresIn: "1d" } // Token expires in 1 hour
+=======
+    { expiresIn: "365d" }
+>>>>>>> cbef87c (updated flask server)
   );
 };

@@ -18,6 +18,17 @@ SmartDemand is a Web Application designed for small business owners, providing A
 
 **Notifications:** Alerts users when new forecast data is available.
 
+<<<<<<< HEAD
+=======
+## Links:
+
+**Wiki:** https://code.vt.edu/gsamheeta/stockproq/-/wikis/home
+
+**Phase 1:** https://code.vt.edu/gsamheeta/stockproq/-/wikis/Phase-1
+
+**Figma UI Wireframes:** https://code.vt.edu/gsamheeta/stockproq/-/wikis/Figma-UI-Wireframes
+
+>>>>>>> cbef87c (updated flask server)
 ## Server
 
 To setup the server, clone the repo, navigate to the server folder. Then do the following:

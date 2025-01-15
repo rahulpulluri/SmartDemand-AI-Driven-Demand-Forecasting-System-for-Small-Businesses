@@ -28,6 +28,7 @@ const Chatbot = () => {
       ]);
 
       try {
+<<<<<<< HEAD
         const response = await fetch("http://127.0.0.1:5000/api/chat", {
           method: "POST",
           headers: {
@@ -38,6 +39,23 @@ const Chatbot = () => {
 
         const data = await response.json();
         const llmReply = data.reply || "Sorry, I couldn't process that."; // Adjust to match Flask response
+=======
+        // Call the updated Node.js API with environment variable and token
+        const response = await fetch(
+          `${process.env.REACT_APP_AUTH_API_ENDPOINT}/llm-response`,
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Authorization: `Bearer ${localStorage.getItem("token")}`,
+            },
+            body: JSON.stringify({ prompt: input }),
+          }
+        );
+
+        const data = await response.json();
+        const llmReply = data.reply || "Sorry, I couldn't process that.";
+>>>>>>> cbef87c (updated flask server)
 
         setMessages((prevMessages) => [
           ...prevMessages,

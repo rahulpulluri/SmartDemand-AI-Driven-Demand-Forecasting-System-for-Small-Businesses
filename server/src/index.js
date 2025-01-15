@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 // app.js or index.js
 import express from "express";
 import { authenticateJWT } from "./middleware/authenticateJWT.js";
 import { login } from "./controllers/authController.js";
+=======
+import express from "express";
+import { authenticateJWT } from "./middleware/authenticateJWT.js";
+import { login } from "./controllers/authController.js";
+import { getLLMResponse } from './controllers/llmController.js';
+>>>>>>> cbef87c (updated flask server)
 import dotenv from "dotenv";
 import { seedData } from "./models/db.js";
 import cors from "cors";
@@ -48,12 +55,23 @@ app.use(
   })
 );
 
+<<<<<<< HEAD
+=======
+// Handle pre-flight CORS request for /llm-response
+app.options("/llm-response", cors());  // Allow OPTIONS request for pre-flight CORS
+
+>>>>>>> cbef87c (updated flask server)
 // Middleware
 app.use(express.json());
 
 // Public route
 app.post("/login", login);
 
+<<<<<<< HEAD
+=======
+app.post('/llm-response', getLLMResponse);
+
+>>>>>>> cbef87c (updated flask server)
 // Apply JWT authentication middleware to all routes after /login
 app.use(authenticateJWT);
 
@@ -107,6 +125,11 @@ app.get("/protected", (req, res) => {
   });
 });
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> cbef87c (updated flask server)
 // Start the server
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
