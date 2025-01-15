@@ -1,43 +1,89 @@
-# SmartDemand: AI Driven Demand Forecasting System for Small Businesses
+# **SmartDemand: AI-Driven Demand Forecasting System for Small Businesses**
 
-SmartDemand is a Web Application designed for small business owners, providing AI-driven demand forecasting and business analytics. It leverages historical data, external data sources, and clustering techniques to generate accurate demand forecasts, helping businesses optimize their inventory and marketing strategies.
+## **Project Overview**  
+SmartDemand is an AI-powered demand forecasting and business intelligence system designed to help small businesses make data-driven decisions. By leveraging machine learning models for demand forecasting, clustering, and providing actionable business insights, SmartDemand empowers businesses to optimize their operations, improve resource allocation, and stay ahead of market trends.
 
-## Features:
+### **Key Benefits**:
+- **Precise Demand Predictions**: Prevent overstocking/understocking.
+- **Natural Language-Powered Chatbot**: Instant query resolutions.
+- **Customizable Data Pipelines**: Tailored for business-specific requirements.
 
-**AI Demand Forecasting:** Generates predictions based on historical and external data.
+### **Project Demo Link**  
+*Add your project demo link here.*
 
-**Customer Data Clustering:** Segments customer data to identify trends and improve forecast accuracy.
+## **Features and Functionalities**
 
-**Historical Data Viewing:** Displays past sales and customer demographics.
+### **1. Authentication and Authorization**
+- Secure login with **JWT** for user identity and role-based access.
+- Data isolation ensures that users can only access data relevant to their business.
 
-**Forecast Insights:** Provides actionable insights with graphs and charts.
+### **2. Dashboard**  
+A centralized navigation hub showcasing key features:
+- **Trends**  
+- **Impact**  
+- **Smart Chat**  
+- **Clustering**  
+- **Demand Forecasting**
 
-**Data Privacy & Security:** Ensures each business's data is securely stored and isolated.
+### **3. Trends**  
+Visual representations of essential business data:
+- Monthly sales trends.
+- Average product price by category.
+- Order status distribution.
+- Top customers by payments.
+- Payment type analysis.
+- Top locations by order volume.
 
-**Report Exporting:** Allows exporting of historical and forecast data for offline use.
+### **4. Impact**  
+- Analysis of feature importance to identify actionable business areas.
+- Simulated sales improvements based on areas such as delivery delays, discounts, and seasonal priorities.
 
-**Notifications:** Alerts users when new forecast data is available.
+### **5. Clustering**  
+Customer and product segmentation for strategic insights:
+- Customer segmentation based on recency and spending patterns.
+- Product clustering by seasonality and sales performance.
+- Delivery performance-based clustering for logistical insights.
 
-<<<<<<< HEAD
-=======
-## Links:
+### **6. Demand Forecasting**  
+- Predicts product demand with **84% accuracy** using historical data.
+- Allows users to input variables such as **year, week, product category,** and **city** for specific forecasts.
+- Features a comparison with actual data to build user confidence.
 
-**Wiki:** https://code.vt.edu/gsamheeta/stockproq/-/wikis/home
+### **7. Smart Chat**  
+- **GPT-4 powered chatbot** for non-technical user queries.
+- Provides insights such as payment trends, customer behavior, and sales performance.
 
-**Phase 1:** https://code.vt.edu/gsamheeta/stockproq/-/wikis/Phase-1
+---
 
-**Figma UI Wireframes:** https://code.vt.edu/gsamheeta/stockproq/-/wikis/Figma-UI-Wireframes
+## **Technical Design**
 
->>>>>>> cbef87c (updated flask server)
-## Server
+### **System Architecture**  
+- **Frontend**: Built with **React**, hosted on **Vercel**.  
+- **Backend**:  
+  - **Node.js**: Handles authentication.  
+  - **Flask**: Manages data processing, hosted on **AWS**.
 
-To setup the server, clone the repo, navigate to the server folder. Then do the following:
+### **AI Modules**  
+- **Clustering**: Implemented using **K-Means** and **Dynamic Time Warping (DTW)**.  
+- **Sales and Demand Forecasting**: Developed with **XGBoost**.  
+- **Chatbot**: Fine-tuned **GPT-4** model for natural language interactions.
 
-1. run `npm i`.
-2. run `sqlite3 smart-demand.db` in the console. Leave the cli running.
-3. create a .env file from your .env.sample file.
-4. generate a SECRET_KEY and add it to the .env file.
-5. Uncomment `seedData()` from the index.js file. This will create the tables and add initial data to it.
-6. run your server with `npm start`. Server will run on port 3000.
-7. Comment out `seedData()`, you won't need it after the first run.
-8. Run `select * from users;` in the sqlite cli. If you see 4 users, everything went well. You can exit the cli with `.exit`.
+---
+
+## **Machine Learning Models**
+
+### **1. Sales-Based Model**  
+Predicts total sales for high-level strategic planning.
+
+### **2. Quantity-Based Model**  
+Forecasts product demand based on key factors such as location and seasonality.
+
+---
+
+## **Enriched Dataset**  
+The dataset integrates:
+- Clustering insights.
+- Geographic and time-based features.
+- Data enhancements for advanced analytics and natural language processing.
+
+---
