@@ -58,13 +58,9 @@ const Clustering = () => {
   return (
     <div className="clustering-container">
       <div className="clustering-chart">
-<<<<<<< HEAD
-        <h2><b>Customer Segmentation Based on Recency and Monetary Value</b></h2>
-=======
         <h2>
           <b>Customer Segmentation Based on Recency and Monetary Value</b>
         </h2>
->>>>>>> cbef87c (updated flask server)
         <Plot
           data={Object.keys(clusterColors).map((clusterId) => ({
             x: customerData
@@ -80,13 +76,9 @@ const Clustering = () => {
           }))}
           layout={{
             title: "Customer Segmentation",
-<<<<<<< HEAD
-            xaxis: { title: "Recency (Lower values indicate more recent purchases)" },
-=======
             xaxis: {
               title: "Recency (Lower values indicate more recent purchases)",
             },
->>>>>>> cbef87c (updated flask server)
             yaxis: { title: "Monetary (Total Payment Value)" },
             hovermode: "closest",
             width: 700,
@@ -98,30 +90,19 @@ const Clustering = () => {
         />
         <p className="chart-description">
           Customer Segmentation Based on Recency and Monetary Value: Red Cluster
-<<<<<<< HEAD
-          (High Value): Key focus group for driving revenue. These customers spend
-          significantly but may require re-engagement if recency is high. Blue &
-          Orange Clusters (Steady Customers): Consistent purchasers but with
-          potential for increasing their spending. Green Cluster (At Risk): These
-=======
           (High Value): Key focus group for driving revenue. These customers
           spend significantly but may require re-engagement if recency is high.
           The Orange Cluster (Steady Customers): Consistent purchasers but with
           potential for increasing their spending. Blue Cluster (At Risk): These
->>>>>>> cbef87c (updated flask server)
           customers haven't purchased recently and spend less, indicating
           potential churn and the need for retention strategies.
         </p>
       </div>
 
       <div className="clustering-chart">
-<<<<<<< HEAD
-        <h2><b>Product Clustering Based on Delivery Performance</b></h2>
-=======
         <h2>
           <b>Product Clustering Based on Delivery Performance</b>
         </h2>
->>>>>>> cbef87c (updated flask server)
         <Plot
           data={Object.keys(clusterColors).map((clusterId) => ({
             x: productData
@@ -148,21 +129,11 @@ const Clustering = () => {
           config={{ responsive: true }}
         />
         <p className="chart-description">
-<<<<<<< HEAD
-          Product Clustering Based on Delivery Performance: Blue Cluster (Stable,
-          Low Performance): Low sales but consistent delivery—consider revising
-          sales strategy. Orange Cluster (Star Performers): High sales with
-          optimal delivery times—maintain performance for high customer
-          satisfaction. Green Cluster (High Delays): Delivery issues—investigate
-          and improve logistics for these products to avoid customer
-          dissatisfaction.
-=======
           Product Clustering Based on Delivery Performance: Red Cluster (Star
           Performers): High sales with optimal delivery times—maintain
           performance for high customer satisfaction. Blue Cluster (High
           Delays): Delivery issues—investigate and improve logistics for these
           products to avoid customer dissatisfaction.
->>>>>>> cbef87c (updated flask server)
         </p>
       </div>
     </div>

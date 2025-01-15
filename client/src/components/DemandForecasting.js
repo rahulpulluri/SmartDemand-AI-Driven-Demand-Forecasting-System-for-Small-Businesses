@@ -16,10 +16,6 @@ const DemandForecasting = () => {
   const [errorMessage, setErrorMessage] = useState("");
 
   const [samples] = useState([
-<<<<<<< HEAD
-    { Year: 2018, Week: 29, City: "sao paulo", "Product Category": "toys" },
-=======
->>>>>>> cbef87c (updated flask server)
     {
       Year: 2018,
       Week: 34,
@@ -33,15 +29,6 @@ const DemandForecasting = () => {
       "Product Category": "electronics",
     },
     { Year: 2018, Week: 29, City: "sao paulo", "Product Category": "toys" },
-<<<<<<< HEAD
-    {
-      Year: 2018,
-      Week: 29,
-      City: "rio de janeiro",
-      "Product Category": "watches_gifts",
-    },
-=======
->>>>>>> cbef87c (updated flask server)
   ]);
 
   useEffect(() => {
@@ -293,17 +280,6 @@ const DemandForecasting = () => {
           <div className="mt-6 p-4 bg-gray-50 border rounded-md">
             {result.actual_demand ? (
               <p className="text-gray-800">
-<<<<<<< HEAD
-                <strong>Predicted Demand:</strong> {result.predicted_demand}{" "}
-                units
-                <br />
-                <strong>Actual Demand:</strong> {result.actual_demand} units
-              </p>
-            ) : (
-              <p className="text-gray-800">
-                <strong>Predicted Demand:</strong> {result.predicted_demand}{" "}
-                units
-=======
                 <strong>Predicted and Actual Demand:</strong>
                 <br />
                 <br />
@@ -326,7 +302,6 @@ const DemandForecasting = () => {
                 category <strong>"{productCategory}"</strong> is for the{" "}
                 <strong>{getWeekHint(week)}</strong> in the city of{" "}
                 <strong>{city}</strong>, {year}.
->>>>>>> cbef87c (updated flask server)
               </p>
             )}
           </div>
