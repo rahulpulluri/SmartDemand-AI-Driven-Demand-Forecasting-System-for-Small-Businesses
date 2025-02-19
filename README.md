@@ -1,3 +1,5 @@
+**[Project Demo Link](https://drive.google.com/file/d/16lr-ffZnhNj1-xm57ZRzHhdTGMxORkAh/view )**
+
 # SmartDemand: AI-Driven Demand Forecasting System for Small Businesses
 
 ## Project Overview
@@ -6,8 +8,6 @@
 - Precise demand predictions to prevent overstocking/understocking.
 - A natural language-powered chatbot for instant queries.
 - Customizable business-specific data pipelines.
-
-**[Project Demo Link](https://drive.google.com/file/d/16lr-ffZnhNj1-xm57ZRzHhdTGMxORkAh/view )**
 
 ## Features and Functionalities
 
